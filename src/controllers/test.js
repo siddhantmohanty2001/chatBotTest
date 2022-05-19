@@ -24,7 +24,7 @@ let contactController = {
                                     {
                                         conditions: [
                                             {
-                                                "conditionType": "test1",
+                                                "conditionType": "condition",
                                                 "conditionValue": []
                                             }
                                         ],
