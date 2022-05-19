@@ -31,7 +31,7 @@ let contactController = {
                                         replaceMentValues: [
                                             {
                                                 replaceKey: "$dynamicEmail",
-                                                replaceIn: "oddMessages",
+                                                replaceIn: "message",
                                                 replaceValue: "User"
                                             }
                                         ]
