@@ -17,6 +17,7 @@ let contactController = {
 		// console.log(conversationData.slotValues);
 		let nameMessage=conversationData.userMessage;
 		const email=extractEmails(nameMessage);
+		console.log(email);
 		console.log("user message for name here",nameMessage);
 		try {
 
