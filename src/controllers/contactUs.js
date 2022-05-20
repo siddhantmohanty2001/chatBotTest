@@ -41,6 +41,9 @@ let contactController = {
                                                 "conditionValue": [conversationData]
                                             }
                                         ],
+										replaceMentValues: [
+                                          
+                                        ]
                                        
                                     }
                                 
@@ -68,7 +71,9 @@ let contactController = {
                                                 "conditionValue": [conversationData]
                                             }
                                         ],
-                                       
+										replaceMentValues: [
+										
+                                        ]
                                     }
                                 
                             
