@@ -9,14 +9,16 @@ let contactController = {
 	
 	test: async (req, res) => {
 		let conversationData = req.body.conversationData;
-		console.log(req.body);
-		console.log(conversationData);
+		// console.log(req.body);
+		// console.log(conversationData.slotValues);
+		let slotValues=conversationData.slotValues;
+		console.log(slotValues);
 		try {
 			let responseObject = [];
             
 			if (!Array.isArray(conversationData.slotsAnswered)) conversationData.slotsAnswered = [];
 			let slotsData = { isSlotGiven: false, slotsAnswered: [] };
-			
+		
 						responseObject = [
                             
             
@@ -32,7 +34,7 @@ let contactController = {
                                             {
                                                 replaceKey: "$dynamicEmail",
                                                 replaceIn: "message",
-                                                replaceValue: "User"
+                                                replaceValue: "user"
                                             }
                                         ]
                                     }
