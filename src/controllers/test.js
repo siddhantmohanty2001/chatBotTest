@@ -12,7 +12,7 @@ let contactController = {
 		// console.log(req.body);
 		// console.log(conversationData.slotValues);
 		let slotValues=conversationData.slotValues;
-		console.log(slotValues);
+		console.log("slot values here",slotValues);
 		try {
 			let responseObject = [];
             
