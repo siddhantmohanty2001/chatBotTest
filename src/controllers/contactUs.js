@@ -15,6 +15,7 @@ let contactController = {
 			let responseObject = [];
 			let allSlots = ["askName", "askPhoneNumber", "askEmail"];
 			let slotValues = conversationData.slotValues;
+			console.log('******slot values****',slotValues);
 			if (!Array.isArray(conversationData.slotsAnswered)) conversationData.slotsAnswered = [];
 			let slotsData = { isSlotGiven: false, slotsAnswered: [] };
 			let phoneNumberData = { isGiven: false, verifiedStatus: false, data: null };
