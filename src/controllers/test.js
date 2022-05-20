@@ -42,7 +42,7 @@ let contactController = {
                             
                         ]
 						
-			console.dir(responseObject, { depth: null, colors: true });
+			// console.dir(responseObject, { depth: null, colors: true });
 			let result = integrator.responseCreater(responseObject);
 			return res.status(result.statusCode).json(result);
 		} catch (error) {
