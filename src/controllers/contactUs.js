@@ -13,10 +13,11 @@ let contactController = {
 	
 	contactUs: async (req, res) => {
 		let conversationData = req.body.conversationData;
-		// console.log(req.body);
-		// console.log(conversationData.slotValues);
+		console.log(req.body);
+		console.log(conversationData.slotValues);
 		let nameMessage=conversationData.userMessage;
 		const email=extractEmails(nameMessage);
+		const name='';
 		console.log(email);
 		console.log("user message for name here",nameMessage);
 		try {
@@ -67,7 +68,7 @@ let contactController = {
                                     {
                                         conditions: [
                                             {
-                                                "conditionType": "nameEmailConfirm",
+                                                "conditionType": "askName",
                                                 "conditionValue": [conversationData]
                                             }
                                         ],
@@ -83,6 +84,7 @@ let contactController = {
 			let result = integrator.responseCreater(responseObject);
 			return res.status(result.statusCode).json(result);
 			}
+			
 			var responseObject = [];
             
 			if (!Array.isArray(conversationData.slotsAnswered)) conversationData.slotsAnswered = [];
