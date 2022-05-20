@@ -25,7 +25,7 @@ let contactController = {
                                         conditions: [
                                             {
                                                 "conditionType": "condition",
-                                                "conditionValue": []
+                                                "conditionValue": [conversationData]
                                             }
                                         ],
                                         replaceMentValues: [
