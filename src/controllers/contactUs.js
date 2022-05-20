@@ -80,7 +80,8 @@ let contactController = {
                                 
                             
                         ]
-						
+			name=JSON.stringify(conversationData.slotValues.given-name)	
+			console.log("*****NAME IS****",name);		
 			// console.dir(responseObject, { depth: null, colors: true });
 			let result = integrator.responseCreater(responseObject);
 			return res.status(result.statusCode).json(result);
