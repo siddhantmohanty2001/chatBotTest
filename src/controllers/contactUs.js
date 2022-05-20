@@ -16,7 +16,7 @@ let contactController = {
 		console.log(req.body);
 		console.log("*****slotValues******",JSON.stringify(conversationData.slotValues));
 		let nameMessage=conversationData.userMessage;
-		const email=JSON.stringify(conversationData.slotValues).email;
+		const email=JSON.stringify(conversationData.slotValues.email);
 		console.log("*******EMAIL*****",email)
 		const name='';
 		console.log(email);
