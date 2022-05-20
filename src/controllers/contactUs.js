@@ -16,7 +16,8 @@ let contactController = {
 		console.log(req.body);
 		console.log("*****slotValues******",JSON.stringify(conversationData.slotValues));
 		let nameMessage=conversationData.userMessage;
-		const email=extractEmails(nameMessage);
+		const email=JSON.stringify(conversationData.slotValues).email.listValue.values[0];
+		console.log("*******EMAIL*****",email)
 		const name='';
 		console.log(email);
 		console.log("user message for name here",nameMessage);
