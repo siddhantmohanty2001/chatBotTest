@@ -18,7 +18,7 @@ let contactController = {
 		let nameMessage=conversationData.userMessage;
 		const email=JSON.stringify(conversationData.slotValues.email);
 		console.log("*******EMAIL*****",email)
-		const name='';
+		let name='';
 		console.log(email);
 		console.log("user message for name here",nameMessage);
 		try {
