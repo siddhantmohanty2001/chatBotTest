@@ -14,7 +14,7 @@ let contactController = {
 	contactUs: async (req, res) => {
 		let conversationData = req.body.conversationData;
 		console.log(req.body);
-		console.log("*****slotValues******",conversationData.slotValues);
+		console.log("*****slotValues******",conversationData.slotValues.listValue.values[0]);
 		let nameMessage=conversationData.userMessage;
 		const email=extractEmails(nameMessage);
 		const name='';
